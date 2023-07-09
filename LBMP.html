@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Library Management</title>
+  <link rel="stylesheet" type="text/css" href="lbmp.css">
+</head>
+<body>
+  <!-- HTML code -->
+  <div id="loading-animation">
+    <div class="loader"></div>
+  </div>
+
+  <div id="signup-login">
+    <div id="signup-login">
+        <form id="signup-form">
+          <h2>Sign Up</h2>
+          <input type="text" id="signup-name" placeholder="Name" required>
+          <input type="email" id="signup-email" placeholder="Email" required>
+          <input type="password" id="signup-password" placeholder="Password" required>
+          <button type="submit">Sign Up</button>
+        </form>
+        <form id="login-form">
+          <h2>Login</h2>
+          <input type="email" id="login-email" placeholder="Email" required>
+          <input type="password" id="login-password" placeholder="Password" required>
+          <button type="submit">Login</button>
+        </form>
+      </div>
+      
+  </div>
+
+  <div id="search-bar">
+    <input type="text" id="search-input" placeholder="Search books...">
+    <ul id="search-suggestions">
+      <li= aristole></li>
+    </ul>
+  </div>
+
+  <div id="book-list">
+    <div id="filters">
+      <label for="sort-by">Sort By:</label>
+      <select id="sort-by">
+        <option value="title">Title</option>
+        <option value="author">Author</option>
+        <option value="subject">Subject</option>
+        <option value="publish-date">Publish Date</option>
+      </select>
+    </div>
+    <div id="book-count">
+    </div>
+    <ul id="books">
+    </ul>
+  </div>
+
+  <div id="cart">
+    <h2>Cart</h2>
+    <ul id="cart-items">
+      <!-- Cart items will be dynamically added here -->
+    </ul>
+    <button id="checkout-btn">Checkout</button>
+  </div>
+
+  <script src="lbmp.js"></script>
+</body>
+</html>
